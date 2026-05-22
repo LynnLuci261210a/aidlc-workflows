@@ -93,3 +93,7 @@ This project is licensed under the Apache License 2.0 — see the [LICENSE](LICE
 
 - Original project: [awslabs/aidlc-workflows](https://github.com/awslabs/aidlc-workflows)
 - AWS Labs team for the foundational work
+
+## Personal Notes
+
+> **Note:** This is my personal fork for learning and experimentation. I'm primarily exploring the AI-assisted code review and test generation workflows. Changes here may not be suitable for upstream contribution.
