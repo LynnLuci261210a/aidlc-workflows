@@ -100,4 +100,8 @@ This project is licensed under the Apache License 2.0 — see the [LICENSE](LICE
 
 ### My Setup
 
-I'm running this on Python 3.11 with a local `.env` file for AWS credentials instead of a fully configured CLI profile. If you're doing the same, copy `.env.example` to `.env` and fill in your values before running any AWS-backed workflows.
+I'm running this on Python 3.11 with a local `.env` file for AWS credentials. A few things I've found helpful:
+
+- Copy `.env.example` to `.env` and fill in your `AWS_PROFILE` before running anything
+- Use `python -m pytest tests/ -x` during local dev to fail fast on the first broken test
+- The code review workflow is the most useful one to start with — try it on a small PR first
