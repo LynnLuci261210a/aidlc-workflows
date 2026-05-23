@@ -100,8 +100,8 @@ This project is licensed under the Apache License 2.0 — see the [LICENSE](LICE
 
 ### My Setup
 
-I'm running this on Python 3.11 with a local `.env` file for AWS credentials. A few things I've found helpful:
+I'm running this on Python 3.11 with a local `.env` file for AWS credentials. A few things that helped me get started:
 
-- Copy `.env.example` to `.env` and fill in your `AWS_PROFILE` before running anything
-- Use `python -m pytest tests/ -x` during local dev to fail fast on the first broken test
-- The code review workflow is the most useful one to start with — try it on a small PR first
+- Copy `.env.example` to `.env` and fill in your AWS credentials before running anything
+- The `us-east-1` region works best in my testing; some workflows time out in `eu-west-1`
+- Run `pip install -r requirements.txt -r requirements-dev.txt` to also get the dev/test dependencies
