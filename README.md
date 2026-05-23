@@ -100,8 +100,14 @@ This project is licensed under the Apache License 2.0 — see the [LICENSE](LICE
 
 ### My Setup
 
-I'm running this on Python 3.11 with a local `.env` file for AWS credentials. A few things that helped me get started:
+I'm running this on Python 3.11 with a local `.env` file for AWS credentials. My typical workflow:
 
-- Copy `.env.example` to `.env` and fill in your AWS credentials before running anything
-- The `us-east-1` region works best in my testing; some workflows time out in `eu-west-1`
-- Run `pip install -r requirements.txt -r requirements-dev.txt` to also get the dev/test dependencies
+```bash
+# Load environment and run
+source .env && python -m aidlc_workflows
+```
+
+### Customizations
+
+- Bumped default Bandit severity threshold to `MEDIUM` (was `LOW`) to reduce noise in local runs
+- Added a personal `.env.example` for easier onboarding on a fresh machine
