@@ -97,3 +97,7 @@ This project is licensed under the Apache License 2.0 — see the [LICENSE](LICE
 ## Personal Notes
 
 > **Note:** This is my personal fork for learning and experimentation. I'm primarily exploring the AI-assisted code review and test generation workflows. Changes here may not be suitable for upstream contribution.
+
+### My Setup
+
+I'm running this on Python 3.11 with a local `.env` file for AWS credentials instead of a fully configured CLI profile. If you're doing the same, copy `.env.example` to `.env` and fill in your values before running any AWS-backed workflows.
