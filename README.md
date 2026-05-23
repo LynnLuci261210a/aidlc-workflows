@@ -100,14 +100,14 @@ This project is licensed under the Apache License 2.0 — see the [LICENSE](LICE
 
 ### My Setup
 
-I'm running this on Python 3.11 with a local `.env` file for AWS credentials. To replicate my setup:
+I'm running this on Python 3.11 with a local `.env` file for AWS credentials. A few things that helped me get started:
 
-```bash
-cp .env.example .env
-# Then fill in your AWS credentials and region in .env
-```
+- Copy `.env.example` to `.env` and fill in your `AWS_PROFILE` and `AWS_REGION`
+- I use `us-east-1` as my default region for testing
+- Run `pip install -r requirements.txt -r requirements-dev.txt` to get linting/test tools too
 
-### Workflow Notes
+### Workflows I've Tested
 
-- The **code review workflow** is the most useful one so far — I've been running it as a pre-commit step.
-- TODO: experiment with the test generation workflow on my side project.
+- ✅ AI-assisted code review — works well out of the box
+- ✅ Test generation — needed minor prompt tuning for my codebase style
+- 🔲 Documentation generation — haven't tried this yet
