@@ -100,8 +100,15 @@ This project is licensed under the Apache License 2.0 — see the [LICENSE](LICE
 
 ### My Setup
 
-I'm running this on Python 3.11 with a local `.env` file for AWS credentials. A few things that helped me get started:
+I'm running this on Python 3.11 with a local `.env` file for AWS credentials. To replicate my setup:
 
-- Copy `.env.example` to `.env` and fill in your `AWS_PROFILE` and `AWS_REGION` before running anything
-- I use `python-dotenv` locally to load the `.env` automatically — add it with `pip install python-dotenv` if it's not already in your environment
-- The `us-east-1` region works best for me; some workflow features hit Bedrock endpoints that aren't available everywhere yet
+```bash
+cp .env.example .env
+# Fill in your AWS_PROFILE and AWS_REGION in .env
+export $(cat .env | xargs)
+```
+
+### Workflows I've Been Using
+
+- **Code review workflow** — most useful day-to-day; catches things I miss in PRs
+- **Test generation** — hit or miss on complex logic, but great for boilerplate tests
