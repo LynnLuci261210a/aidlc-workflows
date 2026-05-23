@@ -104,11 +104,10 @@ I'm running this on Python 3.11 with a local `.env` file for AWS credentials. To
 
 ```bash
 cp .env.example .env
-# Fill in your AWS_PROFILE and AWS_REGION in .env
-export $(cat .env | xargs)
+# Then fill in your AWS credentials and region in .env
 ```
 
-### Workflows I've Been Using
+### Workflow Notes
 
-- **Code review workflow** — most useful day-to-day; catches things I miss in PRs
-- **Test generation** — hit or miss on complex logic, but great for boilerplate tests
+- The **code review workflow** is the most useful one so far — I've been running it as a pre-commit step.
+- TODO: experiment with the test generation workflow on my side project.
