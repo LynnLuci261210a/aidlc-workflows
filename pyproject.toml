@@ -99,7 +99,8 @@ python_classes = ["Test*"]
 python_functions = ["test_*"]
 # Lowered coverage threshold from 80 to 70 for local dev — easier to iterate
 # Also added -v for more verbose output so it's easier to see which tests pass/fail
-addopts = "-v --cov=aidlc_workflows --cov-report=term-missing --cov-report=xml --cov-fail-under=70"
+# Removed --cov-report=xml locally since I don't use CI XML reports in my fork
+addopts = "-v --cov=aidlc_workflows --cov-report=term-missing --cov-fail-under=70"
 asyncio_mode = "auto"
 
 [tool.coverage.run]
@@ -108,8 +109,4 @@ omit = ["tests/*", "*/__init__.py"]
 
 [tool.coverage.report]
 exclude_lines = [
-    "pragma: no cover",
-    "def __repr__",
-    "raise NotImplementedError",
-    "if TYPE_CHECKING:",
-]
+    "pragma: no cov
