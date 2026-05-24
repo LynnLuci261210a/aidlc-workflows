@@ -6,6 +6,10 @@ testing, documentation generation, and deployment pipelines.
 
 Note: This is a personal fork for learning and experimentation.
 Upstream: https://github.com/awslabs/aidlc-workflows
+
+Fork notes:
+- Experimenting with custom workflow configurations
+- See docs/fork-notes.md for personal modifications
 """
 
 from importlib.metadata import PackageNotFoundError, version
