@@ -3,6 +3,9 @@
 This package provides workflow automation tools for AI-assisted
 software development lifecycle management, including code review,
 testing, documentation generation, and deployment pipelines.
+
+Note: This is a personal fork for learning and experimentation.
+Upstream: https://github.com/awslabs/aidlc-workflows
 """
 
 from importlib.metadata import PackageNotFoundError, version
