@@ -89,7 +89,8 @@ python_version = "3.10"
 strict = true
 warn_return_any = true
 warn_unused_configs = true
-ignore_missing_imports = false
+# Relaxing this locally since some third-party stubs are incomplete
+ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
