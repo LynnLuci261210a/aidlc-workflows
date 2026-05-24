@@ -17,7 +17,8 @@ from importlib.metadata import PackageNotFoundError, version
 try:
     __version__ = version("aidlc-workflows")
 except PackageNotFoundError:
-    __version__ = "0.0.0"
+    # Fallback for development installs (e.g. pip install -e .)
+    __version__ = "0.0.0-dev"
 
 __author__ = "aidlc-workflows contributors"
 __license__ = "Apache-2.0"
