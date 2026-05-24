@@ -102,12 +102,6 @@ This project is licensed under the Apache License 2.0 — see the [LICENSE](LICE
 
 I'm running this on Python 3.11 with a local `.env` file for AWS credentials. A few things that helped me get started:
 
-- Copy `.env.example` to `.env` and fill in your `AWS_PROFILE` and `AWS_REGION`
-- I use `us-east-1` as my default region for testing
-- Run `pip install -r requirements.txt -r requirements-dev.txt` to get linting/test tools too
-
-### Workflows I've Tested
-
-- ✅ AI-assisted code review — works well out of the box
-- ✅ Test generation — needed minor prompt tuning for my codebase style
-- 🔲 Documentation generation — haven't tried this yet
+- Copy `.env.example` to `.env` and fill in your `AWS_PROFILE` and `AWS_REGION` before running anything
+- I set `AWS_REGION=us-west-2` since that's where my dev resources live — change as needed
+- Run `pip install -r requirements.txt -r requirements-dev.txt` to also get the dev/test dependencies
